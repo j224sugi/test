@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="UTF-8">
-		<script type="text/javascript">
-			function sum(){
-							var a=form.a.value;
-							var b=form.b.value;
-							form.c.value=a+b;//form.~.valueの場合文字列として扱われて適切に処理されない。
-						}
-		</script>
-	</head>
-	<body>
-		２つの数の総和を求めます。
-		<br>
-		<form name="form">
-			<input type="text" name="a" size=10><br>
-			<input type="text" mame="b" size=10><br>
-			<input type="button" value="合計" onclick="sum()"><br>
-			<input type="text" name="c" size=10><br>
-		</form>
-	</body>
+
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        function sum() {
+            var a = parseInt(form.a.value);
+            var b = parseInt(form.b.value);
+            form.c.value = a + b;//form.~.valueの場合文字列として扱われて適切に処理されない。
+        }
+    </script>
+</head>
+
+<body>
+    ２つの数の総和を求めます。
+    <br>
+    <form name="form">
+        <input type="text" name="a" size=10><br>
+        <input type="text" name="b" size=10><br>
+        <input type="button" value="合計" onclick="sum()"><br>
+        <input type="text" name="c" size=10><br>
+    </form>
+</body>
+
 </html>
