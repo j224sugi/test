@@ -5,12 +5,9 @@
 double myRoot(double x) // 返り値をdouble型にすることで小数点以降の数値を表示させる。
 {
     int y;
-    if (x < 0) // xが0以上の時実施するため、x<0となる
+    if (!(x >= 0)) // xが0以上の時実施するため、x<0となる
     {
         printf("エラー：0以上の値ではありません in myRoot()\n");
-        exit(1);
-    }
-    y = sqrt(x);
     return y;
 }
 
