@@ -15,7 +15,7 @@ int main(void)
 {
     int i;
     i = 0; // iに数値を設定しておかなければwhile文で挙動がおかしくなる可能性がある。
-    double *x = (double *)malloc(sizeof(double) * 100);
+    double *x = (double *)malloc(sizeof(double) * 101);
 
     while (i <= 100)
     {
